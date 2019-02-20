@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Medical-office-two", "Medical-office-two\", "{763C4694-E3E2-4422-BA13-93A3FB569346}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64618"
+		Debug.AspNetCompiler.PhysicalPath = "Medical-office-two\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64618\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64618"
+		Release.AspNetCompiler.PhysicalPath = "Medical-office-two\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64618\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64618"
+		SlnRelativePath = "Medical-office-two\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{763C4694-E3E2-4422-BA13-93A3FB569346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763C4694-E3E2-4422-BA13-93A3FB569346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7B82780-BE7B-46F9-ADBE-14F534394B0C}
+	EndGlobalSection
+EndGlobal
