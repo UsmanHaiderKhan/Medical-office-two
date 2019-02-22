@@ -63,66 +63,90 @@ $(function () {
     $("#datepicker").datepicker();
 });
 /*===================== Owl Carousel Slider ======================*/
-//$(function () {
-//    $('.owl-carousel').owlCarousel({
-//        loop: true,
-//        margin: 30,
-//        dots: true,
-//        nav: false,
-//        responsiveClass: true,
-//        responsive: {
-//            0: {
-//                items: 1,
-//            },
-//            600: {
-//                items: 1,
-//            },
-//            1000: {
-//                items: 1,
-//            }
-//        }
-//    });
-//});
-/*===================== Owl Carousel Slider ======================*/
-
 $(function () {
-    $('.responsive').slick({
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
         dots: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1100,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+        nav: true,
+        responsiveClass: true,
+        navText: ["<i class='owl-circle-left fas fa-chevron-left'></i>", "<i class='owl-circle-right fas fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                nav: false
             },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
+            400: {
+                items: 1,
+                dots: true,
+                nav: false
             },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            600: {
+                items: 1,
+                dots: true,
+                nav: false
             },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            800: {
+                items: 1,
+                dots: false,
+                nav: true
+            },
+            1000: {
+                items: 2,
+                dots: false,
+                nav: true
             }
-        ]
+        }
     });
 });
+/*===================== Slick Slider ======================*/
+
+//$(function () {
+//    $('.responsive').slick({
+//        dots: false,
+//        infinite: true,
+//        speed: 300,
+//        slidesToShow: 2,
+//        slidesToScroll: 2,
+
+//        responsive: [
+//            {
+//                breakpoint: 1100,
+//                settings: {
+//                    slidesToShow: 2,
+//                    slidesToScroll: 2,
+//                    infinite: false,
+//                    dots: false
+//                }
+//            },
+//            {
+//                breakpoint: 1024,
+//                settings: {
+//                    slidesToShow: 2,
+//                    slidesToScroll: 2,
+//                    infinite: false,
+//                    dots: false
+//                }
+//            },
+//            {
+//                breakpoint: 600,
+//                settings: {
+//                    slidesToShow: 1,
+//                    slidesToScroll: 1,
+//                    infinite: false,
+//                    dots: false
+//                }
+//            },
+//            {
+//                breakpoint: 480,
+//                settings: {
+//                    slidesToShow: 1,
+//                    slidesToScroll: 1,
+//                    infinite: false,
+//                    dots: false
+//                }
+//            }
+//        ]
+//    });
+//});
