@@ -281,7 +281,8 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-    color: #5d9ebe;
+    color: #5d9ebe !important;
+    font-size: 14px !important;
     font-family: 'Noto Sans', sans-serif !important;
 }
 
@@ -606,14 +607,14 @@ textarea {
 }
 
 .doc-text {
-    font-size: 25px;
+    font-size: 22.5px;
     color: #026699;
     font-family: 'NotoSans-SemiBold';
 }
 
 .designation-text {
     color: #3585ad;
-    font-size: 19px;
+    font-size: 20px;
     font-family: 'NotoSans-SemiBold';
 }
 
@@ -646,6 +647,9 @@ textarea {
 /*.slick-slider {
     margin-left: 15px !important;
 }*/
+.slick-slide {
+    width: 1149px !important;
+}
 
 #team .slick-prev:before {
     margin-left: -2px;
@@ -664,22 +668,42 @@ textarea {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-next {
-    right: -53px;
-    height: 37px;
-    width: 37px;
-    border-radius: 50%;
-    border: 2px solid #026699;
-    background: #ffffff;
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: -68px;
+    top: 139px;
 }
 
-.slick-prev {
-    left: -53px;
-    height: 37px;
-    width: 37px;
-    border-radius: 50%;
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: -68px;
+    top: 139px;
+}
+
+.owl-circle-left {
+    height: 31px;
+    padding: 4px !important;
+    width: 31px;
+    font-size: 18px !important;
+    color: #026093 !important;
+    border-radius: 50% !important;
     border: 2px solid #026699;
-    background: #ffffff;
+    background: #ffffff !important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+
+.owl-circle-right {
+    height: 31px;
+    padding: 4px !important;
+    width: 31px;
+    font-size: 18px !important;
+    color: #026093 !important;
+    border-radius: 50% !important;
+    border: 2px solid #026699;
+    background: #ffffff !important;
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
@@ -690,7 +714,7 @@ textarea {
 
 .icons-color {
     width: 40px;
-    padding: 11px;
+    padding: 8px;
     border-radius: 50%;
     border: 3px solid #333333;
     height: 40px;
@@ -998,6 +1022,10 @@ textarea {
     font-family: 'Open Sans', sans-serif;
 }
 /*=================== Custome Margins ===================*/
+.mt--180 {
+    margin-top: -180px;
+}
+
 .mt-300 {
     margin-top: 300px;
 }
@@ -1365,12 +1393,48 @@ button:focus {
 
 /*================ Media Query ===============*/
 @media screen and (max-width: 1500px) {
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-padding {
+        height: 100%;
+        padding: 50px 30px;
+    }
 }
 
 @media screen and (max-width: 1367px) {
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tag-of-blog {
+        width: 62%;
+    }
+
+    .phone-no {
+        font-size: 23px;
+    }
+
+    .card-padding {
+        height: 100%;
+        padding: 50px 30px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    .owl-carousel .owl-nav button.owl-next {
+        top: 105px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        top: 105px;
+    }
+
     .banner-text {
         font-size: 48px;
     }
@@ -1463,19 +1527,19 @@ button:focus {
     }
 
     .mt-60 {
-        margin-top: 24px;
+        margin-top: 38px;
     }
 
     .doc-text {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .designation-text {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .doc-desc {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .icons-color {
@@ -1539,15 +1603,533 @@ button:focus {
     .mt-90 {
         margin-top: 30px;
     }
+
+    .owl-carousel .owl-item img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 800px) {
+    .slick-slide {
+        width: 1151px !important;
+    }
+
+    .banner-text {
+        font-size: 34px;
+    }
+
+    .banner-desc {
+        font-size: 14px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+        line-height: 46px;
+    }
+
+    .appoint-text {
+        font-size: 15px;
+    }
+
+    .health-text {
+        font-size: 21px;
+    }
+
+    .about {
+        font-size: 16px;
+    }
+
+    .health-pera-text {
+        font-size: 15.2px;
+    }
+
+    .label-text {
+        font-size: 16px;
+    }
+
+    .btn-appoint {
+        height: 54px;
+        font-size: 13px;
+    }
+
+    .phone-no {
+        font-size: 12px;
+    }
+
+    .call-text {
+        font-size: 11px;
+    }
+
+    .name-text {
+        font-size: 23px;
+    }
+
+    .best-heading {
+        font-size: 12px;
+    }
+
+    .blog-card-pera-text {
+        font-size: 11px;
+    }
+
+    .best-color {
+        font-size: 30px;
+    }
+
+    .we-color {
+        font-size: 30px;
+    }
+
+    .best-pera-text {
+        font-size: 12px;
+    }
+
+    .media-padding {
+        padding: 15px;
+    }
+
+    .heading-text {
+        font-size: 13px;
+    }
+
+    .heading-pera-text {
+        font-size: 13px;
+    }
+
+    .bg-circle {
+        padding: 5px;
+        width: 37px;
+        height: 37px;
+    }
+
+    .btn-visit {
+        width: 200px;
+        height: 54px;
+        font-size: 16px;
+        line-height: 41px;
+    }
+
+    .mt-75 {
+        margin-top: 24px;
+    }
+
+    .service-sub-heading {
+        font-size: 17px;
+    }
+
+    .service-heading {
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+
+    .service-text-heading {
+        font-size: 15px;
+    }
+
+    .service-text-sub {
+        font-size: 14px;
+    }
+
+    .mt-60 {
+        margin-top: 24px;
+    }
+
+    .doc-text {
+        font-size: 22px;
+    }
+
+    .designation-text {
+        font-size: 18px;
+    }
+
+    .doc-desc {
+        font-size: 16px;
+    }
+
+    .icons-color {
+        padding: 6px;
+    }
+
+    .media-blog-card-mt {
+        margin-top: 30px;
+    }
+
+    .blog-sub-heading {
+        font-size: 14px;
+    }
+
+    .blog-heading {
+        font-size: 32px;
+    }
+
+    .card-pera-text {
+        font-size: 10px;
+    }
+
+    .touch-desc {
+        font-size: 16px;
+    }
+
+    .mt-50 {
+        margin-top: 24px;
+    }
+
+    .location-text {
+        font-size: 19px;
+    }
+
+    .address-text {
+        font-size: 14px;
+    }
+
+    .phone-text {
+        font-size: 16px;
+    }
+
+    .mail-text {
+        font-size: 17px;
+    }
+
+    .ml-4 {
+        margin-left: 1rem !important;
+    }
+
+    .bg-color-one {
+        padding: 95px 70px;
+    }
+
+    .mt-100 {
+        margin-top: 26px;
+    }
+
+    .bg-color-two {
+        padding: 22px 71px;
+    }
+
+    .btn-send {
+        width: 180px;
+        height: 56px;
+        font-size: 16px;
+    }
+
+    .copy-text {
+        font-size: 18px;
+    }
+
+    .mt-90 {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .slick-slide {
+        width: 1151px !important;
+    }
+
+    .banner-text {
+        font-size: 34px;
+    }
+
+    .banner-desc {
+        font-size: 14px;
+    }
+
+    .btn-contact {
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+        line-height: 46px;
+    }
+
+    .appoint-text {
+        font-size: 15px;
+    }
+
+    .health-text {
+        font-size: 21px;
+    }
+
+    .about {
+        font-size: 16px;
+    }
+
+    .health-pera-text {
+        font-size: 15px;
+    }
+
+    .label-text {
+        font-size: 16px;
+    }
+
+    .btn-appoint {
+        height: 54px;
+        font-size: 13px;
+    }
+
+    .phone-no {
+        font-size: 12px;
+    }
+
+    .call-text {
+        font-size: 11px;
+    }
+
+    .name-text {
+        font-size: 23px;
+    }
+
+    .best-heading {
+        font-size: 12px;
+    }
+
+    .blog-card-pera-text {
+        font-size: 11px;
+    }
+
+    .best-color {
+        font-size: 30px;
+    }
+
+    .we-color {
+        font-size: 30px;
+    }
+
+    .best-pera-text {
+        font-size: 12px;
+    }
+
+    .media-padding {
+        padding: 15px;
+    }
+
+    .heading-text {
+        font-size: 13px;
+    }
+
+    .heading-pera-text {
+        font-size: 13px;
+    }
+
+    .bg-circle {
+        padding: 5px;
+        width: 37px;
+        height: 37px;
+    }
+
+    .btn-visit {
+        width: 200px;
+        height: 54px;
+        font-size: 16px;
+        line-height: 41px;
+    }
+
+    .mt-75 {
+        margin-top: 24px;
+    }
+
+    .service-sub-heading {
+        font-size: 17px;
+    }
+
+    .service-heading {
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+
+    .service-text-heading {
+        font-size: 15px;
+    }
+
+    .service-text-sub {
+        font-size: 14px;
+    }
+
+    .mt-60 {
+        margin-top: 24px;
+    }
+
+    .doc-text {
+        font-size: 22px;
+    }
+
+    .designation-text {
+        font-size: 18px;
+    }
+
+    .doc-desc {
+        font-size: 16px;
+    }
+
+    .icons-color {
+        padding: 6px;
+    }
+
+    .media-blog-card-mt {
+        margin-top: 30px;
+    }
+
+    .blog-sub-heading {
+        font-size: 14px;
+    }
+
+    .blog-heading {
+        font-size: 32px;
+    }
+
+    .card-pera-text {
+        font-size: 10px;
+    }
+
+    .touch-desc {
+        font-size: 16px;
+    }
+
+    .mt-50 {
+        margin-top: 24px;
+    }
+
+    .location-text {
+        font-size: 19px;
+    }
+
+    .address-text {
+        font-size: 14px;
+    }
+
+    .phone-text {
+        font-size: 16px;
+    }
+
+    .mail-text {
+        font-size: 17px;
+    }
+
+    .ml-4 {
+        margin-left: 1rem !important;
+    }
+
+    .bg-color-one {
+        padding: 95px 70px;
+    }
+
+    .mt-100 {
+        margin-top: 26px;
+    }
+
+    .bg-color-two {
+        padding: 22px 71px;
+    }
+
+    .btn-send {
+        width: 180px;
+        height: 56px;
+        font-size: 16px;
+    }
+
+    .copy-text {
+        font-size: 18px;
+    }
+
+    .mt-90 {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 414px) {
+    .banner-text {
+        padding-top: 70px;
+        font-size: 23px;
+    }
+
+    .banner-desc {
+        font-size: 13px;
+    }
+
+    .mt--180 {
+        margin-top: 0px;
+    }
+
+    .media-appoint-padding {
+        padding: 30px
+    }
+
+    .banner-padding {
+        padding: 0 20px;
+    }
+
+    .btn-contact {
+        width: 150px;
+        height: 48px;
+        font-size: 15px;
+        line-height: 33px;
+    }
+
+    .best-heading {
+        font-size: 18px;
+    }
+
+    .blog-card-pera-text {
+        font-size: 14px;
+    }
+
+    .media-block {
+        display: block;
+    }
+
+    .media-align {
+        text-align: center;
+    }
+
+    .call-text {
+        font-size: 17px;
+    }
+
+    .phone-no {
+        font-size: 22px;
+    }
+
+    .media-card-mt {
+        margin-top: 50px;
+    }
+
+    .heading-text {
+        font-size: 18px;
+    }
+
+    .mt-80 {
+        margin-top: 0
+    }
+
+    .slider-padding {
+        padding: 20px 10px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .blog-padding {
+        padding: 20px 10px;
+    }
+
+    .card-pera-text {
+        font-size: 14px;
+    }
+
+    .service-heading {
+        font-size: 22px;
+    }
+
+    .service-sub-heading {
+        font-size: 15px;
+    }
+
+    .copy-text {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 411px) {
@@ -1567,19 +2149,560 @@ button:focus {
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+    .owl-carousel .owl-nav button.owl-prev {
+        top: 96px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        top: 96px;
+        right: -31px;
+    }
+
+    .banner-text {
+        padding-top: 30px;
+        font-size: 35px;
+    }
+
+    .banner-desc {
+        font-size: 15px;
+    }
+
+    .appoint-text {
+        font-size: 16px;
+    }
+
+    .mt--180 {
+        margin-top: -140px;
+    }
+
+    .media-appoint-padding {
+        padding: 30px
+    }
+
+    .banner-padding {
+        padding: 0 20px;
+    }
+
+    .btn-contact {
+        width: 150px;
+        height: 48px;
+        font-size: 15px;
+        line-height: 33px;
+    }
+
+    .btn-appoint {
+        font-size: 14px;
+        height: 52px;
+    }
+
+    .bg-circle {
+        padding: 6px;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background-color: rgb(233, 73, 11);
+    }
+
+    .heading-text {
+        font-size: 13px;
+    }
+
+    .health-pera-text {
+        font-size: 13.34px;
+    }
+
+    .best-heading {
+        font-size: 12px;
+    }
+
+    .blog-card-pera-text {
+        font-size: 12px;
+    }
+
+    .media-block {
+        display: block;
+    }
+
+    .media-align {
+        text-align: center;
+    }
+
+    .call-text {
+        font-size: 9px;
+    }
+
+    .phone-no {
+        font-size: 18px;
+    }
+
+    .media-card-mt {
+        margin-top: 50px;
+    }
+
+
+    .mt-80 {
+        margin-top: 0
+    }
+
+    .slider-padding {
+        padding: 20px 10px;
+    }
+
+    .heading-pera-text {
+        font-size: 13px;
+    }
+
+    .blog-padding {
+        padding: 20px 10px;
+    }
+
+    .card-pera-text {
+        font-size: 14px;
+    }
+
+    .service-heading {
+        font-size: 22px;
+    }
+
+    .service-sub-heading {
+        font-size: 15px;
+    }
+
+    .bg-color-one {
+        padding: 96px 61px;
+    }
+
+    .bg-color-two {
+        padding: 22px 40px;
+    }
+
+    .copy-text {
+        font-size: 16px;
+    }
+
+    .media-blog-card-mt {
+        margin-top: 30px;
+    }
+    /**/
+    .owl-carousel .owl-item img {
+        width: 84.5%;
+    }
+
+    .slider-padding {
+        padding: 20px 155px;
+    }
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
+    .owl-carousel .owl-item img {
+        width: 84.5%;
+    }
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
+    .banner-text {
+        padding-top: 70px;
+        font-size: 47px;
+    }
+
+    .banner-desc {
+        font-size: 15px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .mt--180 {
+        margin-top: 0px;
+    }
+
+    .media-appoint-padding {
+        padding: 30px
+    }
+
+    .banner-padding {
+        padding: 0 20px;
+    }
+
+    .btn-contact {
+        width: 150px;
+        height: 48px;
+        font-size: 15px;
+        line-height: 33px;
+    }
+
+    .best-heading {
+        font-size: 18px;
+    }
+
+    .blog-card-pera-text {
+        font-size: 14px;
+    }
+
+    .media-block {
+        display: block;
+    }
+
+    .media-align {
+        text-align: center;
+    }
+
+    .call-text {
+        font-size: 17px;
+    }
+
+    .phone-no {
+        font-size: 22px;
+    }
+
+    .media-card-mt {
+        margin-top: 50px;
+    }
+
+    .heading-text {
+        font-size: 18px;
+    }
+
+    .mt-80 {
+        margin-top: 0
+    }
+
+    .slider-padding {
+        padding: 20px 10px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .blog-padding {
+        padding: 20px 10px;
+    }
+
+    .card-pera-text {
+        font-size: 14px;
+    }
+
+    .service-heading {
+        font-size: 22px;
+    }
+
+    .service-sub-heading {
+        font-size: 15px;
+    }
+
+    .copy-text {
+        font-size: 16px;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 731px) and (orientation: landscape) {
+    .owl-carousel .owl-item img {
+        width: 100%;
+    }
+
+    .banner-text {
+        padding-top: 70px;
+        font-size: 47px;
+    }
+
+    .banner-desc {
+        font-size: 15px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .mt--180 {
+        margin-top: 0px;
+    }
+
+    .media-appoint-padding {
+        padding: 30px
+    }
+
+    .banner-padding {
+        padding: 0 20px;
+    }
+
+    .btn-contact {
+        width: 150px;
+        height: 48px;
+        font-size: 15px;
+        line-height: 33px;
+    }
+
+    .best-heading {
+        font-size: 18px;
+    }
+
+    .blog-card-pera-text {
+        font-size: 14px;
+    }
+
+    .media-block {
+        display: block;
+    }
+
+    .media-align {
+        text-align: center;
+    }
+
+    .call-text {
+        font-size: 17px;
+    }
+
+    .phone-no {
+        font-size: 22px;
+    }
+
+    .media-card-mt {
+        margin-top: 50px;
+    }
+
+    .heading-text {
+        font-size: 18px;
+    }
+
+    .mt-80 {
+        margin-top: 0
+    }
+
+    .slider-padding {
+        padding: 20px 10px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .blog-padding {
+        padding: 20px 10px;
+    }
+
+    .card-pera-text {
+        font-size: 14px;
+    }
+
+    .service-heading {
+        font-size: 22px;
+    }
+
+    .service-sub-heading {
+        font-size: 15px;
+    }
+
+    .copy-text {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 667px) and (orientation: landscape) {
+    .owl-carousel .owl-item img {
+        width: 100%;
+    }
+
+    .banner-text {
+        padding-top: 70px;
+        font-size: 47px;
+    }
+
+    .banner-desc {
+        font-size: 15px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .mt--180 {
+        margin-top: 0px;
+    }
+
+    .media-appoint-padding {
+        padding: 30px
+    }
+
+    .banner-padding {
+        padding: 0 20px;
+    }
+
+    .btn-contact {
+        width: 150px;
+        height: 48px;
+        font-size: 15px;
+        line-height: 33px;
+    }
+
+    .best-heading {
+        font-size: 18px;
+    }
+
+    .blog-card-pera-text {
+        font-size: 14px;
+    }
+
+    .media-block {
+        display: block;
+    }
+
+    .media-align {
+        text-align: center;
+    }
+
+    .call-text {
+        font-size: 17px;
+    }
+
+    .phone-no {
+        font-size: 22px;
+    }
+
+    .media-card-mt {
+        margin-top: 50px;
+    }
+
+    .heading-text {
+        font-size: 18px;
+    }
+
+    .mt-80 {
+        margin-top: 0
+    }
+
+    .slider-padding {
+        padding: 20px 10px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .blog-padding {
+        padding: 20px 10px;
+    }
+
+    .card-pera-text {
+        font-size: 14px;
+    }
+
+    .service-heading {
+        font-size: 22px;
+    }
+
+    .service-sub-heading {
+        font-size: 15px;
+    }
+
+    .copy-text {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
+    .owl-carousel .owl-item img {
+        width: 100%;
+    }
+
+    .banner-text {
+        padding-top: 70px;
+        font-size: 47px;
+    }
+
+    .banner-desc {
+        font-size: 15px;
+    }
+
+    .appoint-text {
+        font-size: 22px;
+    }
+
+    .mt--180 {
+        margin-top: 0px;
+    }
+
+    .media-appoint-padding {
+        padding: 30px
+    }
+
+    .banner-padding {
+        padding: 0 20px;
+    }
+
+    .btn-contact {
+        width: 150px;
+        height: 48px;
+        font-size: 15px;
+        line-height: 33px;
+    }
+
+    .best-heading {
+        font-size: 18px;
+    }
+
+    .blog-card-pera-text {
+        font-size: 14px;
+    }
+
+    .media-block {
+        display: block;
+    }
+
+    .media-align {
+        text-align: center;
+    }
+
+    .call-text {
+        font-size: 17px;
+    }
+
+    .phone-no {
+        font-size: 22px;
+    }
+
+    .media-card-mt {
+        margin-top: 50px;
+    }
+
+    .heading-text {
+        font-size: 18px;
+    }
+
+    .mt-80 {
+        margin-top: 0
+    }
+
+    .slider-padding {
+        padding: 20px 10px;
+    }
+
+    .heading-pera-text {
+        font-size: 16px;
+    }
+
+    .blog-padding {
+        padding: 20px 10px;
+    }
+
+    .card-pera-text {
+        font-size: 14px;
+    }
+
+    .service-heading {
+        font-size: 22px;
+    }
+
+    .service-sub-heading {
+        font-size: 15px;
+    }
+
+    .copy-text {
+        font-size: 16px;
+    }
 }
