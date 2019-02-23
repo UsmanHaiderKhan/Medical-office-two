@@ -52,6 +52,11 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
+nav .nav-link.active {
+    width: 100%;
+    border-bottom: 3px solid #0278aa;
+}
+
 .banner-desc {
     font-size: 20px;
     color: #e6e6e6;
@@ -74,14 +79,15 @@ html, body {
     transition: padding 400ms linear;
 }
 
-.active {
-    color: rgb(53, 53, 53) !important;
+#HOME .active {
     font-weight: bold;
     font-size: 18px;
     font-family: 'Noto Sans', sans-serif;
-    /*background-image: -moz-linear-gradient( 90deg, rgb(108,45,111) 0%, rgb(158,82,159) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(108,45,111) 0%, rgb(158,82,159) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(108,45,111) 0%, rgb(158,82,159) 100%);*/
+    background: -moz-linear-gradient( 90deg, rgb(2,96,147) 0%, rgb(77,198,234) 100%);
+    background: -webkit-linear-gradient( 90deg, rgb(2,96,147) 0%, rgb(77,198,234) 100%);
+    background: -ms-linear-gradient( 90deg, rgb(2,96,147) 0%, rgb(77,198,234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -120,7 +126,7 @@ html, body {
 }
 
 #HOME .navbar-light .navbar-nav .nav-link {
-    color: #000000;
+    color: rgb(53, 53, 53) !important;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -139,12 +145,12 @@ html, body {
 
 .btn-contact {
     color: white;
-    width: 272px;
-    height: 79px;
-    font-size: 20px;
+    width: 230px;
+    height: 66px;
+    font-size: 18px;
     border-radius: 0;
-    border: 0;
-    line-height: 67px;
+    border: none;
+    line-height: 52px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
@@ -178,6 +184,20 @@ html, body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+#appoint-section [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    color: #026799;
+}
+
+.my-position {
+    position: relative;
+}
+
+.calnder-setting {
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+}
+
 button, select {
     text-transform: none;
 }
@@ -208,14 +228,12 @@ textarea {
     width: 100%;
 }
 
-
-
 .email {
     float: right;
     width: 100%;
 }
 
-input[type='text'], [type='email'], select, textarea {
+#appoint-section input[type='text'], #appoint-section [type='email'], select, #appoint-section textarea {
     background: none;
     border: none;
     border-bottom: solid 2px #026799;
@@ -239,7 +257,7 @@ input[type='text'], [type='email'], select, textarea {
     font-family: 'Noto Sans', sans-serif;
 }
 
-    input[type='text']:focus, [type='email']:focus, textarea:focus {
+    #appoint-section input[type='text']:focus, [type='email']:focus, textarea:focus {
         outline: none;
         padding: 0 0 0.875em 0;
     }
@@ -264,15 +282,15 @@ select::-ms-expand {
     display: none;
 }
 
-.subject {
+#appoint-section .subject {
     width: 100%;
 }
 
-.telephone {
+#appoint-section .telephone {
     width: 100%;
 }
 
-textarea {
+#appoint-section textarea {
     line-height: 150%;
     height: 40px;
     resize: none;
@@ -305,8 +323,8 @@ textarea {
 
 .btn-appoint {
     width: 100%;
-    height: 90px;
-    font-size: 22px;
+    height: 70px;
+    font-size: 20px;
     color: #ffffff;
     font-weight: bold;
     background-color: rgb(233, 73, 11);
@@ -344,7 +362,7 @@ textarea {
         width: 53px;
     }
 
-    input[type='text'], [type='email'], select, textarea {
+    #appoint-section input[type='text'], #appoint-section [type='email'], #appoint-section select, textarea {
         font-size: 0.875em;
     }
 }
@@ -456,7 +474,7 @@ textarea {
 }
 
 .banner-padding {
-    padding: 0px 100px;
+    padding: 0px 90px;
 }
 
 .we-color {
@@ -522,14 +540,14 @@ textarea {
 }
 
 .btn-visit {
-    width: 238px;
-    height: 68px;
+    width: 200px;
+    height: 52px;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     border-radius: 0;
     border: 0px;
-    line-height: 60px;
+    line-height: 38px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     background-image: -moz-linear-gradient( 90deg, rgb(2,96,147) 0%, rgb(2,157,204) 100%);
@@ -596,6 +614,9 @@ textarea {
     color: #5a5a5a;
     font-family: 'NotoSans-Medium';
 }
+/*================================= 
+     Team Section Styling
+  =================================*/
 
 #team {
     background-color: #ecf1f2;
@@ -628,44 +649,8 @@ textarea {
     padding: 50px 30px;
 }
 
-.slick-next:before {
-    font-family: "Font Awesome 5 Free" !important;
-    content: "\f054";
-    display: inline-block;
-    vertical-align: middle;
-    font-weight: 600;
-}
-
-.slick-prev:before {
-    font-family: "Font Awesome 5 Free" !important;
-    content: "\f053";
-    display: inline-block;
-    vertical-align: middle;
-    font-weight: 600;
-}
-
-/*.slick-slider {
-    margin-left: 15px !important;
-}*/
-.slick-slide {
-    width: 1149px !important;
-}
-
-#team .slick-prev:before {
-    margin-left: -2px;
-    opacity: .75;
-    color: #026699;
-}
-
-.slick-next:before {
-    margin-left: 2px;
-    font-family: 'slick';
-    font-size: 24px;
-    line-height: 1;
-    opacity: .75;
-    color: #026699;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.card-bg-color {
+    background-color: #f9f9f9 !important;
 }
 
 .owl-carousel .owl-nav button.owl-next {
@@ -706,20 +691,17 @@ textarea {
     background: #ffffff !important;
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+#team [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-size: 20px;
     margin-left: 0;
     color: #333333;
-}
-
-.icons-color {
-    width: 40px;
     padding: 8px;
     border-radius: 50%;
     border: 3px solid #333333;
     height: 40px;
     margin-bottom: 0px;
 }
+
 
 .link-color {
     text-decoration: none;
@@ -736,6 +718,8 @@ textarea {
 #blog-news {
     background: #f1f1f1;
 }
+
+
 
 .below-blog {
     text-transform: uppercase;
@@ -807,11 +791,39 @@ textarea {
     font-family: 'Open Sans', sans-serif;
 }
 
+#blog-news .card-body {
+    padding: 1.25rem 1.25rem 4rem 1.25rem;
+}
+
+.card-position-relative {
+    position: relative;
+}
+
+.card-pera-text::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-bottom: 1px dashed #d7d7d7;
+}
+
+.card-pera-text::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-bottom: 1px dashed #d7d7d7;
+}
+
 .card-pera-text {
     color: #666666;
     font-size: 14px;
     font-weight: 400;
-    padding: 5px 1.25rem 0 1.25rem;
+    padding: 8px .2rem 0 .2rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -895,6 +907,16 @@ textarea {
     color: rgb(34, 34, 34);
 }
 
+.flate-icon-styling {
+    text-decoration: none;
+    color: #333333;
+}
+
+    .flate-icon-styling:hover {
+        text-decoration: none;
+        color: #333333;
+    }
+
 .bg-color-one {
     padding: 100px 135px;
     background-color: #4dc6ea;
@@ -944,36 +966,14 @@ textarea {
         color: #222222;
     }
 
-#name-input {
-    background: none;
-    border: none;
-    border-bottom: solid 2px #c9c9c9;
-    color: #afafaf;
-    font-size: 1.000em;
-    font-weight: 500;
-    letter-spacing: 0px;
-    margin: 0em 0 1.875em 0;
-    padding: 0 0 0.875em 0;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    font-family: 'Noto Sans', sans-serif;
-}
 
-    #name-input::placeholder {
-        color: #afafaf;
-        font-size: 21px !important;
-        font-weight: 400 !important;
-        font-family: 'Noto Sans', sans-serif !important;
-    }
+
+#name-input::placeholder {
+    color: #afafaf;
+    font-size: 21px !important;
+    font-weight: 400 !important;
+    font-family: 'Noto Sans', sans-serif !important;
+}
 
 .btn-send {
     color: #026093;
@@ -997,6 +997,126 @@ textarea {
     font-size: 22px;
     font-family: 'Open Sans', sans-serif;
 }
+/*Floating Input fields*/
+#touch .group {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#touch .inputMaterial {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+    #touch .inputMaterial:focus {
+        outline: none;
+    }
+
+#touch [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    margin-left: 0;
+}
+/* LABEL ======================================= */
+
+#touch label {
+    color: #afafaf;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+#touch .inputMaterial:focus ~ label, .inputMaterial:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #afafaf;
+}
+
+/* BOTTOM BARS ================================= */
+#touch .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+    #touch .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #c9c9c9;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    #touch .bar:before {
+        left: 50%;
+    }
+
+    #touch .bar:after {
+        right: 50%;
+    }
+
+/* active state */
+#touch .inputMaterial:focus ~ .bar:before, .inputMaterial:focus ~ .bar:after {
+    width: 50%;
+}
+
+
+/* active state */
+#touch .inputMaterial:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #c9c9c9;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #c9c9c9;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #c9c9c9;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
 /*================================= 
           Read More Styling
   =================================*/
@@ -1423,6 +1543,10 @@ button:focus {
     .card-padding {
         height: 100%;
         padding: 50px 30px;
+    }
+
+    .card-bg-color {
+        background-color: #f9f9f9 !important;
     }
 }
 
@@ -1906,11 +2030,11 @@ button:focus {
     }
 
     .heading-text {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .heading-pera-text {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .bg-circle {
@@ -2020,7 +2144,7 @@ button:focus {
     }
 
     .bg-color-two {
-        padding: 22px 71px;
+        padding: 33px 33px;
     }
 
     .btn-send {
@@ -2039,6 +2163,14 @@ button:focus {
 }
 
 @media screen and (max-width: 414px) {
+    .bg-color-two {
+        padding: 41px 36px;
+    }
+
+    .media-margin-left {
+        margin-left: .2rem !important;
+    }
+
     .banner-text {
         padding-top: 70px;
         font-size: 23px;
