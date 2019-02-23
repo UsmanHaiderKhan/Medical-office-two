@@ -12,7 +12,7 @@ $(function () {
             var show_content = content.substr(0, showChar);
             var hide_content = content.substr(showChar, content.length - showChar);
             var html = show_content + '<span class="remaining-contents"><span>' + hide_content + '</span>' +
-                '<a href="" class="morelinksss read-text" style="display:block;margin-top:30px;">' + moretext + '</a>'
+                '<a href="" class="morelinksss read-text" style="display:block;margin-top:30px;position: absolute;">' + moretext + '</a>'
                 + '</span>';
             $(this).html(html);
         }
@@ -101,52 +101,3 @@ $(function () {
     });
 });
 /*===================== Slick Slider ======================*/
-
-//$(function () {
-//    $('.responsive').slick({
-//        dots: false,
-//        infinite: true,
-//        speed: 300,
-//        slidesToShow: 2,
-//        slidesToScroll: 2,
-
-//        responsive: [
-//            {
-//                breakpoint: 1100,
-//                settings: {
-//                    slidesToShow: 2,
-//                    slidesToScroll: 2,
-//                    infinite: false,
-//                    dots: false
-//                }
-//            },
-//            {
-//                breakpoint: 1024,
-//                settings: {
-//                    slidesToShow: 2,
-//                    slidesToScroll: 2,
-//                    infinite: false,
-//                    dots: false
-//                }
-//            },
-//            {
-//                breakpoint: 600,
-//                settings: {
-//                    slidesToShow: 1,
-//                    slidesToScroll: 1,
-//                    infinite: false,
-//                    dots: false
-//                }
-//            },
-//            {
-//                breakpoint: 480,
-//                settings: {
-//                    slidesToShow: 1,
-//                    slidesToScroll: 1,
-//                    infinite: false,
-//                    dots: false
-//                }
-//            }
-//        ]
-//    });
-//});
