@@ -10,8 +10,6 @@
     <link href="assets/Bootstrap4/css/animate.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/owl.carousel.min.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="assets/Bootstrap4/css/slick.css" rel="stylesheet" />
-    <link href="assets/Bootstrap4/css/slick-theme.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/LightBox/dist/css/lightbox.css" rel="stylesheet" />
     <link href="assets/Bootstrap4/css/jquery-ui.css" rel="stylesheet" />
     <link href="assets/font/flaticon.css" rel="stylesheet" />
@@ -87,9 +85,10 @@
                             <label for="name" class="label-text">Phone Number</label>
                             <input type="text" placeholder="Enter your phone number" name="telephone" id="telephone_input" required>
                         </div>
-                        <div class="telephone">
+                        <div class="bookingdate my-position">
                             <label for="name" class="label-text">Booking date</label>
-                            <input type="text" placeholder="Select your appointment date" name="telephone" id="telephone_input" required>
+                            <i class="flaticon-calendar calnder-setting"></i>
+                            <input type="text" placeholder="Select your appointment date" name="date" id="datepicker" required>
                         </div>
                         <div class="message form-group">
                             <label for="message" class="label-text">Message</label>
@@ -176,66 +175,68 @@
         </div>
     </section>
     <section id="best-at" class="mt-100" style="background-image: url('assets/Images/best-at.png');">
-        <hr style="width: 100%; height: 6px; background-color: #e9490b" />
-        <div class="row  banner-padding">
-            <div class="col-md-8">
-                <h2 class="below-best we-color mt-80">We Are <span class="best-color">Best At</span></h2>
-                <p class="mt-27 best-pera-text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-                <div class="row mt-60">
-                    <div class="col-md-4 media-padding">
-                        <div class="media">
-                            <p class="bg-circle mr-3">
-                                <img src="assets/Images/check.png" />
-                            </p>
-                            <div class="media-body">
-                                <p class="heading-text">
-                                    Medical Treatment
+        <hr style="width: 100%; height: 6px; background-color: #e9490b;margin: 0" />
+        <div class="row">
+            <div class="banner-padding">
+                <div class="col-md-8">
+                    <h2 class="below-best we-color mt-80">We Are <span class="best-color">Best At</span></h2>
+                    <p class="mt-27 best-pera-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+                    <div class="row mt-60">
+                        <div class="col-lg-4 media-padding">
+                            <div class="media">
+                                <p class="bg-circle mr-3">
+                                    <img src="assets/Images/check.png" />
                                 </p>
-                                <p class="heading-pera-text">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                <div class="media-body">
+                                    <p class="heading-text">
+                                        Medical Treatment
+                                    </p>
+                                    <p class="heading-pera-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 media-padding">
+                            <div class="media">
+                                <p class="bg-circle mr-3">
+                                    <img src="assets/Images/check.png" />
                                 </p>
+                                <div class="media-body">
+                                    <p class="heading-text">
+                                        Medical Treatment
+                                    </p>
+                                    <p class="heading-pera-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 media-padding">
+                            <div class="media">
+                                <p class="bg-circle mr-3">
+                                    <img src="assets/Images/check.png" />
+                                </p>
+                                <div class="media-body">
+                                    <p class="heading-text">
+                                        Medical Treatment
+                                    </p>
+                                    <p class="heading-pera-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 media-padding">
-                        <div class="media">
-                            <p class="bg-circle mr-3">
-                                <img src="assets/Images/check.png" />
-                            </p>
-                            <div class="media-body">
-                                <p class="heading-text">
-                                    Medical Treatment
-                                </p>
-                                <p class="heading-pera-text">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="text-center mt-60  mb-5">
+                        <a href="#appoint-section" class="btn btn-visit">Book a Visit</a>
                     </div>
-                    <div class="col-md-4 media-padding">
-                        <div class="media">
-                            <p class="bg-circle mr-3">
-                                <img src="assets/Images/check.png" />
-                            </p>
-                            <div class="media-body">
-                                <p class="heading-text">
-                                    Medical Treatment
-                                </p>
-                                <p class="heading-pera-text">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-88 mb-5">
-                    <a href="#appoint-section" class="btn btn-visit">Book a Visit</a>
                 </div>
             </div>
         </div>
-        <hr style="width: 100%; height: 6px; background-color: #e9490b" />
+        <hr style="width: 100%; height: 6px; background-color: #e9490b;margin: 0" />
     </section>
     <section id="services" class="mt-75">
         <div class="container">
@@ -333,7 +334,7 @@
                     <div>
                         <div class="row">
                             <div class="col-md-6 pr-0">
-                                <div class=" bg-white card-padding">
+                                <div class="card-bg-color card-padding">
                                     <h2 class="doc-text">Dr.Rowntina Gates</h2>
                                     <p class="designation-text">
                                         General Surgon
@@ -342,9 +343,9 @@
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                                     </p>
                                     <div class="mt-28">
-                                        <a href="#" class="link-color"><i class="flaticon-facebook-app-symbol icons-color"></i></a>
-                                        <a href="#" class="link-color"><i class="flaticon-twitter-logo-silhouette icons-color ml-2"></i></a>
-                                        <a href="#" class="link-color"><i class="flaticon-google-plus-logo icons-color ml-2"></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-facebook-app-symbol"></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-twitter-logo-silhouette "></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-google-plus-logo"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -356,7 +357,7 @@
                     <div>
                         <div class="row">
                             <div class="col-md-6 pr-0">
-                                <div class=" bg-white card-padding">
+                                <div class="card-bg-color card-padding">
                                     <h2 class="doc-text">Dr. James Andreson</h2>
                                     <p class="designation-text">
                                         General Surgon
@@ -365,9 +366,9 @@
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                                     </p>
                                     <div class="mt-28">
-                                        <a href="#" class="link-color"><i class="flaticon-facebook-app-symbol icons-color"></i></a>
-                                        <a href="#" class="link-color"><i class="flaticon-twitter-logo-silhouette icons-color ml-2"></i></a>
-                                        <a href="#" class="link-color"><i class="flaticon-google-plus-logo icons-color ml-2"></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-facebook-app-symbol"></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-twitter-logo-silhouette "></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-google-plus-logo"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -379,7 +380,7 @@
                     <div>
                         <div class="row">
                             <div class="col-md-6 pr-0">
-                                <div class=" bg-white card-padding">
+                                <div class="card-bg-color card-padding">
                                     <h2 class="doc-text">Dr.Rowntina Gates</h2>
                                     <p class="designation-text">
                                         General Surgon
@@ -388,9 +389,9 @@
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                                     </p>
                                     <div class="mt-28">
-                                        <a href="#" class="link-color"><i class="flaticon-facebook-app-symbol icons-color"></i></a>
-                                        <a href="#" class="link-color"><i class="flaticon-twitter-logo-silhouette icons-color ml-2"></i></a>
-                                        <a href="#" class="link-color"><i class="flaticon-google-plus-logo icons-color ml-2"></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-facebook-app-symbol"></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-twitter-logo-silhouette "></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-google-plus-logo"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -402,7 +403,7 @@
                     <div>
                         <div class="row">
                             <div class="col-md-6 pr-0">
-                                <div class=" bg-white card-padding">
+                                <div class="card-bg-color card-padding">
                                     <h2 class="doc-text">Dr.James Anderson</h2>
                                     <p class="designation-text">
                                         General Surgon
@@ -411,9 +412,9 @@
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                                     </p>
                                     <div class="mt-28">
-                                        <a href="#" class="link-color"><i class="flaticon-facebook-app-symbol icons-color"></i></a>
-                                        <a href="#" class="link-color"><i class="flaticon-twitter-logo-silhouette icons-color ml-2"></i></a>
-                                        <a href="#" class="link-color"><i class="flaticon-google-plus-logo icons-color ml-2"></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-facebook-app-symbol"></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-twitter-logo-silhouette "></i></a>
+                                        <a href="#" class="link-color ml-2"><i class="flaticon-google-plus-logo"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -462,11 +463,10 @@
                                     <p class="card-date">
                                         1st December 2018
                                     </p>
+                                    <p class="card-pera-text comments-space card-position-relative">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                                    </p>
                                 </div>
-                                <hr style="border: 1px dotted #d7d7d7; width: 100%; height: 0px" />
-                                <p class="card-pera-text comments-space">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-                                </p>
                             </div>
                             <!--<hr style="border: 1px dotted #d7d7d7; width: 100%; height: 0px" />
                             <a href="#" class="read-text">Read More</a>-->
@@ -497,11 +497,10 @@
                                     <p class="card-date">
                                         1st December 2018
                                     </p>
+                                    <p class="card-pera-text comments-space card-position-relative">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                                    </p>
                                 </div>
-                                <hr style="border: 1px dotted #d7d7d7; width: 100%; height: 0px" />
-                                <p class="card-pera-text comments-space">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -530,11 +529,10 @@
                                     <p class="card-date">
                                         1st December 2018
                                     </p>
+                                    <p class="card-pera-text comments-space card-position-relative">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                                    </p>
                                 </div>
-                                <hr style="border: 1px dotted #d7d7d7; width: 100%; height: 0px" />
-                                <p class="card-pera-text comments-space">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -563,11 +561,10 @@
                                     <p class="card-date">
                                         1st December 2018
                                     </p>
+                                    <p class="card-pera-text comments-space card-position-relative">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                                    </p>
                                 </div>
-                                <hr style="border: 1px dotted #d7d7d7; width: 100%; height: 0px" />
-                                <p class="card-pera-text comments-space">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -596,11 +593,10 @@
                                     <p class="card-date">
                                         1st December 2018
                                     </p>
+                                    <p class="card-pera-text comments-space card-position-relative">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                                    </p>
                                 </div>
-                                <hr style="border: 1px dotted #d7d7d7; width: 100%; height: 0px" />
-                                <p class="card-pera-text comments-space">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -629,11 +625,10 @@
                                     <p class="card-date">
                                         1st December 2018
                                     </p>
+                                    <p class="card-pera-text comments-space card-position-relative">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                                    </p>
                                 </div>
-                                <hr style="border: 1px dotted #d7d7d7; width: 100%; height: 0px" />
-                                <p class="card-pera-text comments-space">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -662,11 +657,10 @@
                                     <p class="card-date">
                                         1st December 2018
                                     </p>
+                                    <p class="card-pera-text comments-space card-position-relative">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                                    </p>
                                 </div>
-                                <hr style="border: 1px dotted #d7d7d7; width: 100%; height: 0px" />
-                                <p class="card-pera-text comments-space">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -695,11 +689,10 @@
                                     <p class="card-date">
                                         1st December 2018
                                     </p>
+                                    <p class="card-pera-text comments-space card-position-relative">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+                                    </p>
                                 </div>
-                                <hr style="border: 1px dotted #d7d7d7; width: 100%; height: 0px" />
-                                <p class="card-pera-text comments-space">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -750,32 +743,40 @@
                         </div>
                     </div>
                     <div class="ml-4 mt-10">
-                        <i class="flaticon-facebook-app-symbol ml-2"></i>
-                        <i class="flaticon-twitter-logo-silhouette ml-3"></i>
-                        <i class="flaticon-linkedin-logo ml-3"></i>
-                        <i class="flaticon-vimeo-logo ml-3"></i>
+                        <a href="#" class="ml-3 media-margin-left flate-icon-styling"><i class="flaticon-facebook-app-symbol"></i></a>
+                        <a href="#" class="ml-3 media-margin-left flate-icon-styling"><i class="flaticon-twitter-logo-silhouette"></i></a>
+                        <a href="#" class="ml-3 media-margin-left flate-icon-styling"><i class="flaticon-linkedin-logo"></i></a>
+                        <a href="#" class="ml-3 media-margin-left flate-icon-styling"><i class="flaticon-vimeo-logo"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-md-7 bg-color-two">
-                <form action="#" method="post" class="mt-45">
+                <form action="" method="post" class="mt-45">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="name">
-                                <label for="name_input" class="label-text"></label>
-                                <input type="text" placeholder="Name" name="name" id="name-input" required>
+                            <div class="group">
+                                <input class="inputMaterial" type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Username</label>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="email">
-                                <label for="email" class="label-text"></label>
-                                <input type="email" placeholder="Email" name="email" id="name-input" required>
+                            <div class="group">
+                                <input class="inputMaterial" type="email" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Email</label>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="message mt-100">
-                                <label for="message_input" class="label-text"></label>
-                                <input type="text" placeholder="Message" name="message" id="name-input" required>
+                            <div class="group">
+                                <div class="message mt-100">
+                                    <input class="inputMaterial" type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Message</label>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12  mt-45">
@@ -798,7 +799,6 @@
     <script src="assets/Bootstrap4/js/poper.min.js"></script>
     <script src="assets/Bootstrap4/js/bootstrap.min.js"></script>
     <script src="assets/Bootstrap4/js/owl.carousel.min.js"></script>
-    <script src="assets/Bootstrap4/js/slick.min.js"></script>
     <script src="assets/Bootstrap4/LightBox/dist/js/lightbox.min.js"></script>
     <script src="assets/Bootstrap4/js/loadMoreResults.js"></script>
     <script src="assets/Bootstrap4/js/jquery-ui.js"></script>
