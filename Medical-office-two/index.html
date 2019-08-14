@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-bg-color">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/Images/logo.png" alt="Alternate Text" class="img-fluid" />
+                    <img src="assets/Images/logo.png" alt="Alternate Text" class="img-fluid media-logo" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -751,33 +751,16 @@
                 </div>
             </div>
             <div class="col-md-7 bg-color-two">
-                <form action="" method="post" class="mt-45">
+                <form action="" method="post" class="mt-45" id="form">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="group">
-                                <input class="inputMaterial" type="text" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Username</label>
-                            </div>
+                            <input type="text" class="input-filed" placeholder="Name " value="" required="" />
                         </div>
                         <div class="col-md-6">
-                            <div class="group">
-                                <input class="inputMaterial" type="email" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Email</label>
-                            </div>
+                            <input type="email" class="input-filed" placeholder="Email " value="" required="" />
                         </div>
                         <div class="col-md-12">
-                            <div class="group">
-                                <div class="message mt-100">
-                                    <input class="inputMaterial" type="text" required>
-                                    <span class="highlight"></span>
-                                    <span class="bar"></span>
-                                    <label>Message</label>
-                                </div>
-                            </div>
+                            <input class="input-filed-area" value="" placeholder="Message" required="">
                         </div>
                         <div class="col-md-12  mt-45">
                             <button type="submit" class="btn btn-send float-right">Send</button>

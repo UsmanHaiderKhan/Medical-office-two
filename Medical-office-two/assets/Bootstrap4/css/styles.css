@@ -1,4 +1,4 @@
-﻿/*================================= 
+﻿/*=================================
         Font-Family's Start
   =================================*/
 @font-face {
@@ -20,7 +20,7 @@
     font-family: 'MyriadPro-Regular';
     src: url('../../Fonts/MyriadPro-Regular.otf') format('opentype');
 }
-/*================================= 
+/*=================================
         Font-Family's End
   =================================*/
 
@@ -34,7 +34,7 @@ html, body {
 }
 
 
-/*================================= 
+/*=================================
           Navbar Styling
   =================================*/
 .banner-content {
@@ -53,9 +53,18 @@ html, body {
 }
 
 nav .nav-link.active {
-    width: 100%;
-    border-bottom: 3px solid #0278aa;
+    position: relative;
 }
+
+    nav .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        width: 78%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px solid #0278aa;
+    }
 
 .banner-desc {
     font-size: 20px;
@@ -164,7 +173,7 @@ nav .nav-link.active {
     }
 
 
-/*================================= 
+/*=================================
       Appointment Form Styling
   =================================*/
 #appoint-section {
@@ -406,7 +415,7 @@ select::-ms-expand {
     font-size: 28px;
     font-family: 'NotoSans-Medium';
 }
-/*================================= 
+/*=================================
       Best Section Styling
   =================================*/
 .best-card {
@@ -464,7 +473,7 @@ select::-ms-expand {
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
-/*================================= 
+/*=================================
       Best At Section Styling
   =================================*/
 #best-at {
@@ -561,7 +570,7 @@ select::-ms-expand {
     }
 
 
-/*================================= 
+/*=================================
      Service Section Styling
   =================================*/
 .below-service {
@@ -614,7 +623,7 @@ select::-ms-expand {
     color: #5a5a5a;
     font-family: 'NotoSans-Medium';
 }
-/*================================= 
+/*=================================
      Team Section Styling
   =================================*/
 
@@ -646,7 +655,7 @@ select::-ms-expand {
 }
 
 .card-padding {
-    padding: 50px 30px;
+    padding: 77px 30px;
 }
 
 .card-bg-color {
@@ -712,7 +721,7 @@ select::-ms-expand {
         text-decoration: none;
         color: #333333;
     }
-/*================================= 
+/*=================================
        Blog Section Styling
   =================================*/
 #blog-news {
@@ -898,7 +907,7 @@ select::-ms-expand {
     border-radius: 50%;
     background: #93979e;
 }
-/*================================= 
+/*=================================
        Touch Section Styling
   =================================*/
 .touch-desc {
@@ -968,12 +977,6 @@ select::-ms-expand {
 
 
 
-#name-input::placeholder {
-    color: #afafaf;
-    font-size: 21px !important;
-    font-weight: 400 !important;
-    font-family: 'Noto Sans', sans-serif !important;
-}
 
 .btn-send {
     color: #026093;
@@ -998,126 +1001,37 @@ select::-ms-expand {
     font-family: 'Open Sans', sans-serif;
 }
 /*Floating Input fields*/
-#touch .group {
-    position: relative;
-    margin-bottom: 35px;
+::placeholder {
+    font-size: 20px !important;
+    color: #afafaf !important;
+    text-transform: capitalize;
+    font-weight: 400 !important;
+    font-style: italic;
+    font-family: 'Noto Sans', sans-serif !important;
 }
 
-#touch .inputMaterial {
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
+.input-filed {
+    font-size: 24px;
+    color: #afafaf;
     border: none;
-    background: transparent;
-    border-bottom: 1px solid #c9c9c9;
-}
-
-    #touch .inputMaterial:focus {
-        outline: none;
-    }
-
-#touch [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    margin-left: 0;
-}
-/* LABEL ======================================= */
-
-#touch label {
-    color: #afafaf;
-    font-size: 20px;
-    font-weight: 400;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    font-family: 'Noto Sans', sans-serif;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-}
-
-/* active state */
-#touch .inputMaterial:focus ~ label, .inputMaterial:valid ~ label {
-    top: -20px;
-    font-size: 14px;
-    color: #afafaf;
-}
-
-/* BOTTOM BARS ================================= */
-#touch .bar {
-    position: relative;
-    display: block;
     width: 100%;
+    height: auto;
+    padding: 10px;
+    background: transparent;
+    border-bottom: 2px solid #c9c9c9;
 }
 
-    #touch .bar:before, .bar:after {
-        content: '';
-        height: 2px;
-        width: 0;
-        bottom: 1px;
-        position: absolute;
-        background: #c9c9c9;
-        transition: 0.2s ease all;
-        -moz-transition: 0.2s ease all;
-        -webkit-transition: 0.2s ease all;
-    }
-
-    #touch .bar:before {
-        left: 50%;
-    }
-
-    #touch .bar:after {
-        right: 50%;
-    }
-
-/* active state */
-#touch .inputMaterial:focus ~ .bar:before, .inputMaterial:focus ~ .bar:after {
-    width: 50%;
+.input-filed-area {
+    font-size: 24px;
+    color: #afafaf;
+    border: none;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background: transparent;
+    border-bottom: 2px solid #c9c9c9;
 }
-
-
-/* active state */
-#touch .inputMaterial:focus ~ .highlight {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-}
-
-/* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-    from {
-        background: #c9c9c9;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@-moz-keyframes inputHighlighter {
-    from {
-        background: #c9c9c9;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-@keyframes inputHighlighter {
-    from {
-        background: #c9c9c9;
-    }
-
-    to {
-        width: 0;
-        background: transparent;
-    }
-}
-
-/*================================= 
+/*=================================
           Read More Styling
   =================================*/
 .comments-space {
@@ -1599,6 +1513,10 @@ button:focus {
         font-size: 19px;
     }
 
+    .blog-padding {
+        padding: 86px 41px;
+    }
+
     .blog-card-pera-text {
         font-size: 14px;
     }
@@ -1707,7 +1625,7 @@ button:focus {
     }
 
     .bg-color-one {
-        padding: 95px 110px;
+        padding: 95px 62px;
     }
 
     .bg-color-two {
@@ -1731,6 +1649,10 @@ button:focus {
     .owl-carousel .owl-item img {
         width: 100%;
         height: 100%;
+    }
+
+    #team [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        padding: 4px;
     }
 }
 
@@ -1948,9 +1870,13 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .slick-slide {
         width: 1151px !important;
+    }
+
+    #appoint-section ::placeholder {
+        font-size: 13px !important;
     }
 
     .banner-text {
@@ -2136,7 +2062,7 @@ button:focus {
     }
 
     .bg-color-one {
-        padding: 95px 70px;
+        padding: 95px 21px;
     }
 
     .mt-100 {
@@ -2162,9 +2088,13 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
     .bg-color-two {
         padding: 41px 36px;
+    }
+
+    nav .nav-link.active::after {
+        width: 18%
     }
 
     .media-margin-left {
@@ -2265,12 +2195,34 @@ button:focus {
 }
 
 @media screen and (max-width: 411px) {
+    .navbar-brand {
+        margin-right: -1rem;
+    }
+
+    .media-logo {
+        width: 60%;
+    }
+
+    nav .nav-link.active::after {
+        width: 18%
+    }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 362px) {
+    .navbar-brand {
+        margin-right: -2rem;
+    }
+
+    .media-logo {
+        width: 60%;
+    }
+
+    nav .nav-link.active::after {
+        width: 18%
+    }
 }
 
 /*==================== Media Query For Land Scape Mode =====================*/
@@ -2280,9 +2232,13 @@ button:focus {
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 }
 
-@media screen and (max-width: 823px) and (orientation: landscape) {
+@media screen and (max-width: 824px) and (orientation: landscape) {
     .owl-carousel .owl-nav button.owl-prev {
         top: 96px;
+    }
+
+    #appoint-section ::placeholder {
+        font-size: 13px !important;
     }
 
     .owl-carousel .owl-nav button.owl-next {
@@ -2401,7 +2357,7 @@ button:focus {
     }
 
     .bg-color-one {
-        padding: 96px 61px;
+        padding: 96px 39px;
     }
 
     .bg-color-two {
@@ -2533,7 +2489,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 731px) and (orientation: landscape) {
+@media screen and (max-width: 732px) and (orientation: landscape) {
     .owl-carousel .owl-item img {
         width: 100%;
     }
@@ -2635,7 +2591,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 668px) and (orientation: landscape) {
     .owl-carousel .owl-item img {
         width: 100%;
     }
@@ -2737,7 +2693,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 640px) and (orientation: landscape) {
+@media screen and (max-width: 641px) and (orientation: landscape) {
     .owl-carousel .owl-item img {
         width: 100%;
     }
